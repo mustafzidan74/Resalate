@@ -1,0 +1,384 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800 !important;1,300..800&display=swap");
+:root {
+  --bg-color: #f6f5ef !important;
+  --light-color: #fff !important;
+  --dark-color: #000 !important;
+  --danger-color: rgb(239 68 68) !important;
+  --danger-color-2: rgb(220 38 38) !important;
+  --primary-color: rgb(68 123 239) !important;
+  --primary-color-2: rgb(32 104 255) !important;
+  --success-color: #4f976a !important;
+  --success-color-2: #287a47 !important;
+  --text-color: rgb(55 65 81) !important;
+  --dark-light-color: rgb(146, 146, 146) !important;
+}
+
+html {
+  font-size: 14px !important;
+}
+
+body {
+  font-family: "Open Sans", sans-serif !important;
+  background: var(--bg-color) !important;
+  color: var(--text-color) !important;
+}
+
+img::-moz-selection {
+  color: none !important;
+  background: none !important;
+}
+
+img::selection {
+  color: none !important;
+  background: none !important;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none !important;
+}
+
+.primary-btn {
+  background: var(--primary-color) !important;
+  color: var(--light-color) !important;
+}
+.primary-btn:hover {
+  background: var(--primary-color-2) !important;
+}
+
+.danger-btn {
+  background: var(--danger-color) !important;
+  color: var(--light-color) !important;
+}
+.danger-btn:hover {
+  background: var(--danger-color-2) !important;
+}
+
+.success-btn {
+  background: var(--success-color) !important;
+  color: var(--light-color) !important;
+}
+.success-btn:hover {
+  background: var(--success-color-2) !important;
+}
+
+main {
+  flex: 1 0 auto !important;
+}
+main form .input-wrapper {
+  background: var(--light-color) !important;
+}
+main form .input-wrapper input,
+main form .input-wrapper select {
+  background: var(--light-color) !important;
+  border: 1px solid var(--dark-light-color) !important;
+}
+main form .input-wrapper input:focus,
+main form .input-wrapper select:focus {
+  border: 1px solid var(--primary-color) !important;
+}
+main .lessons .card-box a {
+  color: var(--primary-color) !important;
+}
+
+.page-wrapper {
+  min-height: 100vh !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.form-box {
+  max-width: 600px !important;
+  margin: 0 auto !important;
+  background: var(--light-color) !important;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1019607843) !important;
+  padding: 28px !important;
+  border-radius: 16px !important;
+  font-family: "TWKEverett", sans-serif !important;
+  font-weight: 400 !important;
+}
+.form-box h3 {
+  color: var(--primary-color) !important;
+  margin-bottom: 30px !important;
+}
+.form-box form input {
+  width: 100% !important;
+}
+.form-box form input {
+  padding: 16px 20px !important;
+  border: 1px solid var(--dark-light-color) !important;
+  border-radius: 16px !important;
+}
+.form-box form label {
+  display: inline-block !important;
+  font-weight: 500 !important;
+  margin-bottom: 5px !important;
+}
+.form-box form .submit-btn button {
+  color: var(--light-color) !important;
+  background: var(--primary-color) !important;
+  font-weight: 500 !important;
+  padding: 12px 28px !important;
+  border-radius: 16px !important;
+  cursor: pointer !important;
+}
+.form-box form .submit-btn a {
+  color: var(--primary-color) !important;
+}
+.form-box form .login-link {
+  font-size: 16px !important;
+  font-weight: 500 !important;
+}
+.form-box form .login-link span {
+  color: var(--text-color) !important;
+}
+.form-box form .login-link a {
+  color: var(--primary-color) !important;
+  text-decoration: underline !important;
+}
+
+.user-profile {
+  font-family: "TWKEverett", sans-serif !important;
+}
+.user-profile .user-information {
+  background: var(--light-color) !important;
+}
+.user-profile .user-information .user-info .img-box button {
+  background: var(--light-color) !important;
+}
+.user-profile .user-information .edit-user-info-form form input {
+  border: 1px solid var(--dark-light-color) !important;
+}
+
+.post-details .card-box {
+  position: relative !important;
+}
+.post-details .card-box::before {
+  content: attr(data-category-name) !important;
+  position: absolute !important;
+  top: 20px !important;
+  right: 20px !important;
+  padding: 8px 20px !important;
+  border-radius: 8px !important;
+  background: var(--success-color) !important;
+  color: var(--light-color) !important;
+  font-weight: 600 !important;
+}
+
+.donations-progress-bar .parent {
+  width: 100% !important;
+  height: 20px !important;
+  background: #f1f1f1 !important;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2) !important;
+  border-radius: 20px !important;
+}
+.donations-progress-bar .parent span {
+  position: relative !important;
+  display: block !important;
+  height: 100% !important;
+  width: var(--progress) !important;
+  background: var(--success-color) !important;
+  border-radius: 20px 0 0 20px !important;
+}
+.donations-progress-bar .parent span::after {
+  content: "" !important;
+  width: 20px !important;
+  height: 20px !important;
+  position: absolute !important;
+  top: 0 !important;
+  right: -10px !important;
+  background: var(--light-color) !important;
+  border: 5px solid var(--primary-color) !important;
+  border-radius: 50% !important;
+}
+.donations-progress-bar .parent span::before {
+  content: attr(data-progress) !important;
+  position: absolute !important;
+  top: -200% !important;
+  right: -20px !important;
+  border-radius: 4px !important;
+  padding: 5px !important;
+  background: var(--primary-color) !important;
+  color: var(--light-color) !important;
+}
+
+.card-box:hover .img-box img {
+  filter: grayscale(0) !important;
+}
+.card-box .img-box img {
+  filter: grayscale(0.8) !important;
+  transition: 0.3s !important;
+}
+
+.masjid-details .hero-banner {
+  position: relative !important;
+  min-height: calc(100vh - 71px) !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: cover !important;
+}
+.masjid-details .hero-banner::after {
+  content: "" !important;
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute !important;
+  left: 0 !important;
+  top: 0 !important;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 50%, transparent) !important;
+}
+.masjid-details .hero-banner .text-box {
+  color: var(--light-color) !important;
+}
+
+header {
+  background: var(--light-color) !important;
+}
+header .toggler button {
+  background: var(--primary-color) !important;
+  color: var(--light-color) !important;
+}
+header .logout-btn button {
+  background: var(--danger-color) !important;
+  color: var(--light-color) !important;
+}
+header .logout-btn button:hover {
+  background: var(--danger-color-2) !important;
+}
+
+aside {
+  background: var(--light-color) !important;
+}
+aside nav a {
+  color: var(--text-color) !important;
+}
+aside nav a:hover, aside nav a.active {
+  color: var(--primary-color) !important;
+}
+
+.navbar-list a {
+  transition: 0.3s !important;
+}
+.navbar-list a:hover, .navbar-list a.active {
+  color: var(--primary-color) !important;
+}/*# sourceMappingURL=main.css.map */
+
+body {
+  overflow-x: hidden;
+}
+
+.home-page {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  overflow-x: hidden;
+}
+.home-page .hero-banner .mySwiper {
+  width: 100vw;
+}
+.home-page .hero-banner .swiper-wrapper {
+  width: 100% !important;
+}
+.home-page .hero-banner .swiper-slide {
+  position: relative;
+  min-height: 719px;
+  width: 100vw !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-user-select: text !important;
+     -moz-user-select: text !important;
+          user-select: text !important;
+  color: var(--light-color);
+  z-index: 1;
+}
+.home-page .hero-banner .swiper-slide::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: -1;
+}
+.home-page .hero-banner .swiper-button-next,
+.home-page .hero-banner .swiper-button-prev {
+  width: 40px;
+  height: 40px;
+  color: var(--light-color);
+  background: var(--primary-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-page .hero-banner .swiper-button-next {
+  right: 30px;
+  left: unset;
+}
+.home-page .hero-banner .swiper-button-prev {
+  left: 30px;
+  right: unset;
+}
+.home-page .marquee-container {
+  width: 100%;
+  overflow: hidden;
+  /*white-space: nowrap;*/
+  padding: 20px 0;
+  background: var(--success-color);
+  color: var(--light-color);
+}
+.home-page .marquee-container:hover .marquee-track {
+  animation-play-state: paused;
+}
+.home-page .marquee-container .marquee-track {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  /*animation: marquee 20s linear infinite;*/
+}
+.home-page .marquee-container .marquee-track .marquee-text {
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+  line-height: 42px;
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(50%);
+  }
+}
+.home-page .contact-section input,
+.home-page .contact-section textarea {
+  border: 1px solid var(--dark-light-color);
+}
+.home-page .partner-section {
+  padding: 70px 0;
+  background: var(--text-color);
+  color: var(--light-color);
+}
+.home-page .partner-section .marquee-track {
+  width: -moz-max-content;
+  width: max-content;
+  /*animation: scroll-marquee 20s linear infinite;*/
+}
+.home-page .partner-section .marquee-track:hover {
+  animation-play-state: paused;
+}
+@keyframes scroll-marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.home-page .indicators-section .box h4 {
+  color: var(--primary-color);
+}/*# sourceMappingURL=home.css.map */
